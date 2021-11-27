@@ -33,7 +33,6 @@ export class TaskService {
   }
   
   addTask(task: Task): Observable<Task> {
-    const url = this.apiUrl 
     return this.http.post<Task>(this.apiUrl, task, httpOptions)
   } 
 }
